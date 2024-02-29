@@ -8,12 +8,13 @@ import streamlit as st
 
 
 """
-
+standard = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
+honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
 
 
 df = pd.DataFrame(
     [
-        {"class name": "Enter Class Name", "Letter Grade": "A", "Honors?": False},
+        {"Grade": "grade", "Semester": "semester", "Class Name": "Enter Class Name", "Letter Grade": "A", "Converted": "number","Honors?": False},
     
     ])
 
