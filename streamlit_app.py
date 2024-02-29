@@ -13,7 +13,7 @@ import streamlit as st
 
 df = pd.DataFrame(
     [
-        {"class name": st.text_input, "Letter Grade": "A", "Honors?": False},
+        {"class name": "Enter Class Name", "Letter Grade": "A", "Honors?": False},
     
     ])
 
