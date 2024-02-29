@@ -17,7 +17,7 @@ df = pd.DataFrame(
     
     ])
 
-df = load.data()
+df = load_data()
 edited_df = st.data_editor(df, num_rows="dynamic") #creates an editable form
 
 average_gpa = edited_df.loc[edited_df["Letter Grade"].idmax()]["class name"]
