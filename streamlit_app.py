@@ -21,4 +21,4 @@ df = load.data()
 edited_df = st.data_editor(df) #creates an editable form
 
 average_gpa = edited_df.loc[edited_df["Letter Grade"].idmax()]["class name"]
-st.markdown("You best class is **", average_gpa, **)
+st.markdown("You best class is **", average_gpa, "**")
