@@ -14,7 +14,7 @@ honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
 
 df = pd.DataFrame(
     [
-        {"Grade": st.selectbox("Year", ('9', '10', '11', '12')),
+        {"Year": st.selectbox("Year", ['9', '10', '11', '12']),
          "Semester": "semester",
          "Class Name": "Enter Class Name",
          "Letter Grade": "A",
@@ -27,8 +27,8 @@ df = pd.DataFrame(
 #df = load_data()
 
 edited_df = st.data_editor(df,
-                           column_order = ["Grade", "Semester", "Class Name", "Honors?", "AP?", "Letter Grade", "Converted"],
-                           column_config = {"Grade": st.selectbox("Year", ('9', '10', '11', '12')),
+                           column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Letter Grade", "Converted"],
+                           column_config = {"Year": st.column_config.SelectboxColumn("Year", options = ['9', '10', '11', '12']),
                                             "Semester": st.column_config.SelectboxColumn("Semester", options= ['1', '2'])
                                             "Letter Grade": st.column_config.SelectboxColumn("Grade", options= ['A', 'B', 'C', 'D', 'F'])
                                            }                                                                         
