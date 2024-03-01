@@ -21,7 +21,7 @@ df = pd.DataFrame(
         {"Converted": "number"},
         {"Honors?": False},
         {"AP?": False}        
-     ], dtype = "category")
+     ])
 
 #df = load_data()
 
