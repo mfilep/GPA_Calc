@@ -26,7 +26,9 @@ df = pd.DataFrame(
 
 #df = load_data()
 
-edited_df = st.data_editor(df, num_rows="dynamic") #creates an editable form
+edited_df = st.data_editor(df,
+                           column_order = ["Grade", "Semester", "Class Name", "Honors?", "AP?", "Letter Grade", "Converted"],
+                           num_rows="dynamic") #creates an editable form
 
 
 #df[0]["Converted"] = standard["Letter Grade"] #= edited_df.loc[edited_df["Letter Grade"]]
