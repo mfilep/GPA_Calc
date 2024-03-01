@@ -14,7 +14,7 @@ honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
 
 df = pd.DataFrame(
     [
-        {"Grade": "grade",
+        {"Grade": st.selectbox("Year", ('9', '10', '11', '12')),
          "Semester": "semester",
          "Class Name": "Enter Class Name",
          "Letter Grade": "A",
