@@ -20,7 +20,7 @@ df = pd.DataFrame(
          "Letter Grade": "A",
          "Converted": "number",
          "Honors?": False,
-         "AP?": False}
+         "AP?": False},
     
     ])
 
