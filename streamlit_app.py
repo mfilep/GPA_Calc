@@ -14,7 +14,13 @@ honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
 
 df = pd.DataFrame(
     [
-        {"Grade": "grade", "Semester": "semester", "Class Name": "Enter Class Name", "Letter Grade": "A", "Converted": "number","Honors?": False},
+        {"Grade": "grade",
+         "Semester": "semester",
+         "Class Name": "Enter Class Name",
+         "Letter Grade": "A",
+         "Converted": "number",
+         "Honors?": False},
+         "AP?": False
     
     ])
 
