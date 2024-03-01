@@ -30,7 +30,7 @@ edited_df = st.data_editor(df,
                            column_config = {"Year": st.column_config.SelectboxColumn("Year", options = ['9', '10', '11', '12']),
                                             "Semester": st.column_config.SelectboxColumn("Semester", options= ['1', '2']),
                                             "Letter Grade": st.column_config.SelectboxColumn("Grade", options= ['A', 'B', 'C', 'D', 'F'])
-                                           }                                                                         
+                                           },                                                                         
                            num_rows="dynamic") #creates an editable form
 
 
