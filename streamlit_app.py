@@ -14,10 +14,10 @@ honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
 
 df = pd.DataFrame(
     [
-        {"Year": ['9', '10', '11', '12'],
-         "Semester": ['1', '2'],
+        {"Year": "9",
+         "Semester": "1",
          "Class Name": "Enter Class Name",
-         "Grade": ['A', 'B', 'C', 'D', 'F'],
+         "Grade": "C",
          "Converted": "#",
          "Honors?": False,
          "AP?": False}        
