@@ -29,5 +29,5 @@ df = pd.DataFrame(
 edited_df = st.data_editor(df, num_rows="dynamic") #creates an editable form
 
 
-df[0]["Converted"] = standard["Letter Grade"] #= edited_df.loc[edited_df["Letter Grade"]]
+#df[0]["Converted"] = standard["Letter Grade"] #= edited_df.loc[edited_df["Letter Grade"]]
 #st.markdown(f"You best class is ** { average_gpa} **")
