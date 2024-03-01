@@ -19,8 +19,8 @@ df = pd.DataFrame(
          "Class Name": "Enter Class Name",
          "Letter Grade": "A",
          "Converted": "number",
-         "Honors?": False},
-         "AP?": False
+         "Honors?": False,
+         "AP?": False}
     
     ])
 
