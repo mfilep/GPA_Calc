@@ -28,7 +28,7 @@ df = pd.DataFrame(
 
 edited_df = st.data_editor(df,
                            column_order = ["Grade", "Semester", "Class Name", "Honors?", "AP?", "Letter Grade", "Converted"],
-                           column_config = {"Grade": st.selectbox("Year", options= ['9', '10', '11', '12']),
+                           column_config = {"Grade": st.selectbox("Year", ('9', '10', '11', '12')),
                                             "Semester": st.column_config.SelectboxColumn("Semester", options= ['1', '2'])
                                             "Letter Grade": st.column_config.SelectboxColumn("Grade", options= ['A', 'B', 'C', 'D', 'F'])
                                            }                                                                         
