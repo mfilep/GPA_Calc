@@ -18,7 +18,7 @@ df = pd.DataFrame(
          "Semester": ['1', '2'],
          "Class Name": "Enter Class Name",
          "Grade": ['A', 'B', 'C', 'D', 'F'],
-         "Converted": "number",
+         "Converted": "#",
          "Honors?": False,
          "AP?": False}        
      ])
