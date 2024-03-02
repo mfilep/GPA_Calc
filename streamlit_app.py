@@ -25,9 +25,9 @@ df = pd.DataFrame(
      ])
 
 try:
-    if df["AP?"]== True:
-        converted = ap["A"]
-        df["Converted"] = converted
+    df["Converted"] = standard["Grade"]#if df["AP?"]:
+        #converted = ap["A"]
+        #df["Converted"] = converted
 except:
     df["Converted"] = "***"
 
