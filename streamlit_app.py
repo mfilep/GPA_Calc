@@ -37,7 +37,8 @@ st.data_editor(df,
                                 "Semester": st.column_config.SelectboxColumn("Semester", options= ['1', '2']),
                                 "Grade": st.column_config.SelectboxColumn("Grade", options= ['A', 'B', 'C', 'D', 'F']),
                                 "Honors?": st.column_config.CheckboxColumn("Honors?"),
-                                "AP?": st.column_config.CheckboxColumn("AP?")
+                                "AP?": st.column_config.CheckboxColumn("AP?"),
+                                "Converted": standard["Grade"]
                                 },
                num_rows="dynamic") #creates an editable form
 
