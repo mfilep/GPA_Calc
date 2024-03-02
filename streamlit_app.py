@@ -25,7 +25,7 @@ df = pd.DataFrame(
      ])
 
 try:
-    if df["AP?"]:
+    if df["AP?"]== True:
         converted = ap["A"]
         df["Converted"] = converted
 except:
