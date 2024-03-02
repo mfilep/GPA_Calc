@@ -15,10 +15,10 @@ ap = {"A": 6, "B": 5, "C": 4, "D": 3, "F": 2}
 
 df = pd.DataFrame(
     [
-        {"Year": "9",
-         "Semester": "1",
+        {"Year": "",
+         "Semester": "",
          "Class Name": "Enter Class Name",
-         "Grade": "C",
+         "Grade": "",
          "Converted": "#",
          "Honors?": False,
          "AP?": False}        
@@ -27,10 +27,10 @@ df = pd.DataFrame(
 #df = load_data()
 
 st.data_editor(df,
-               column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Letter Grade", "Converted"],
+               column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Grade", "Converted"],
                column_config = {"Year": st.column_config.SelectboxColumn("Year", options = ['9', '10', '11', '12']),
                                 "Semester": st.column_config.SelectboxColumn("Semester", options= ['1', '2']),
-                                "Letter Grade": st.column_config.SelectboxColumn("Grade", options= ['A', 'B', 'C', 'D', 'F'])
+                                "Grade": st.column_config.SelectboxColumn("Grade", options= ['A', 'B', 'C', 'D', 'F'])
                                 },
                num_rows="dynamic") #creates an editable form
 
