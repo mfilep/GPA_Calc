@@ -26,7 +26,7 @@ df = pd.DataFrame(
 
 try:
     if df["AP?"]:
-        converted = ap[df["AP?"]]
+        converted = ap[df["Grade"]]
         df["Converted"] = converted
 except:
     df["Converted"] = "***"
