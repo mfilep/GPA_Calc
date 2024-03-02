@@ -24,7 +24,12 @@ df = pd.DataFrame(
          "AP?": False}        
      ])
 
-#df = load_data()
+try:
+    if df["AP?"]:
+        converted = ap[df["AP?"]]
+        df["Converted"] = converted
+except:
+    df["Converted"] = "***"
 
 st.data_editor(df,
                column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Grade", "Converted"],
