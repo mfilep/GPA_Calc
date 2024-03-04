@@ -40,7 +40,8 @@ st.data_editor(df,
                                 "AP?": st.column_config.CheckboxColumn("AP?"),
                                 "Converted": standard["Grade"]
                                 },
-               num_rows="dynamic") #creates an editable form
+                                   num_rows="dynamic"
+              ) #creates an editable form
 
 
 #df[0]["Converted"] = standard["Letter Grade"] #= edited_df.loc[edited_df["Letter Grade"]]
