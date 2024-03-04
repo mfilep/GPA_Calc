@@ -23,14 +23,14 @@ df = pd.DataFrame(
          "Honors?": False,
          "AP?": False}        
      ])
-
+"""
 try:
     df["Converted"] = standard["Grade"]#if df["AP?"]:
         #converted = ap["A"]
         #df["Converted"] = converted
 except:
     df["Converted"] = "***"
-
+"""
 st.data_editor(df,
                column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Grade", "Converted"],
                column_config = {"Year": st.column_config.SelectboxColumn("Year", options = ['9', '10', '11', '12']),
