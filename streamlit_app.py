@@ -32,7 +32,7 @@ st.data_editor(df,
                                 "Honors?": st.column_config.CheckboxColumn("Honors?"),
                                 "AP?": st.column_config.CheckboxColumn("AP?")
                                },                                
-                                   num_rows="dynamic"
+                                   num_rows="dynamic",  
               ) #creates an editable form
 
 
