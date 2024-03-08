@@ -37,8 +37,8 @@ edited_df = st.data_editor(df,
                                    num_rows="dynamic",  
               ) #creates an editable form
 num = test_func()
-edited_df["Converted"] = num
-st.write(edited_df)
+df["Converted"] = num
+
 
 
 
