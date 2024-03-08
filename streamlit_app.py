@@ -39,6 +39,7 @@ edf = st.data_editor(df,
               )
 num = test_func()
 edf["Converted"] = num
+st.write(edf)
 
 
 
