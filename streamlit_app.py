@@ -35,7 +35,8 @@ edited_df = st.data_editor(df,
                                },                                
                                    num_rows="dynamic",  
               ) #creates an editable form
-st.session_state
+num = test_func()
+st.write(df)
 
 
 
