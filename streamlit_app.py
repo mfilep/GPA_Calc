@@ -11,7 +11,8 @@ import streamlit as st
 standard = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
 honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
 ap = {"A": 6, "B": 5, "C": 4, "D": 3, "F": 2}
-
+def test_func():
+    print( "*")
 
 df = pd.DataFrame(
     [
@@ -24,7 +25,7 @@ df = pd.DataFrame(
          "AP?": False}        
      ])
 
-st.data_editor(df,
+edited_df = st.data_editor(df,
                column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Grade", "Converted"],
                column_config = {"Year": st.column_config.SelectboxColumn("Year", options = ['9', '10', '11', '12']),
                                 "Semester": st.column_config.SelectboxColumn("Semester", options= ['1', '2']),
@@ -34,7 +35,8 @@ st.data_editor(df,
                                },                                
                                    num_rows="dynamic",  
               ) #creates an editable form
+st.session_state
 
 
-#df[0]["Converted"] = standard["Letter Grade"] #= edited_df.loc[edited_df["Letter Grade"]]
-#st.markdown(f"You best class is ** { average_gpa} **")
+
+
