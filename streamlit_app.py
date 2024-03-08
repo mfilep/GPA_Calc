@@ -13,7 +13,7 @@ def gpa_num():
     standard = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
     honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
     ap = {"A": 6, "B": 5, "C": 4, "D": 3, "F": 2}
-    graden = df('Grade')
+    graden = df["Grade"]
     try:
         gnum = graden
         return str(gnum)
@@ -49,7 +49,7 @@ edf = st.data_editor(df,
               )
 num = gpa_num()
 edf["Converted"] = num
-st.write(edf)
+#st.write(edf)
 
 
 
