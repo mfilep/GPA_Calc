@@ -32,7 +32,7 @@ edited_df = st.data_editor(df,
                                 "Grade": st.column_config.SelectboxColumn("Grade", options= ['A', 'B', 'C', 'D', 'F']),
                                 "Honors?": st.column_config.CheckboxColumn("Honors?"),
                                 "AP?": st.column_config.CheckboxColumn("AP?"),
-                                "Converted": st.column_config.TextboxColumn("Converted")
+                                "Converted": st.column_config.TextColumn("Converted")
                                },                                
                                    num_rows="dynamic",  
               ) #creates an editable form
