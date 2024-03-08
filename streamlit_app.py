@@ -29,7 +29,7 @@ df = pd.DataFrame(
         {"Year": "",
          "Semester": "",
          "Class Name": "Enter Class Name",
-         "Grade": "",
+         "Grade": "A",
          "Converted": gpa_num(),
          "Honors?": False,
          "AP?": False}        
