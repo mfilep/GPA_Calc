@@ -25,7 +25,7 @@ df = pd.DataFrame(
          "AP?": False}        
      ])
 
-edited_df = st.data_editor(df,
+st.data_editor(df,
                column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Grade", "Converted"],
                column_config = {"Year": st.column_config.SelectboxColumn("Year", options = ['9', '10', '11', '12']),
                                 "Semester": st.column_config.SelectboxColumn("Semester", options= ['1', '2']),
