@@ -25,8 +25,7 @@ df = pd.DataFrame(
          "AP?": False}        
      ])
 #creates an editable form
-num = test_func()
-edf["Converted"] = num
+
 edf = st.data_editor(df,
                column_order = ["Year", "Semester", "Class Name", "Honors?", "AP?", "Grade", "Converted"],
                column_config = {"Year": st.column_config.SelectboxColumn("Year", options = ['9', '10', '11', '12']),
@@ -38,6 +37,8 @@ edf = st.data_editor(df,
                                },                                
                                    num_rows="dynamic",  
               )
+num = test_func()
+edf["Converted"] = num
 
 
 
