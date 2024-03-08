@@ -8,14 +8,14 @@ import streamlit as st
 
 
 """
-def gpa_num(grade):
+def gpa_num():
     
     standard = {"A": 4, "B": 3, "C": 2, "D": 1, "F": 0}
     honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
     ap = {"A": 6, "B": 5, "C": 4, "D": 3, "F": 2}
     
     try:
-        gnum = grade
+        gnum = df['Grade']
         return str(gnum)
     except:
         return str("Nope")
@@ -30,7 +30,7 @@ df = pd.DataFrame(
          "Semester": "",
          "Class Name": "Enter Class Name",
          "Grade": "",
-         "Converted": gpa_num(['Grade']),
+         "Converted": gpa_num(),
          "Honors?": False,
          "AP?": False}        
      ])
@@ -47,9 +47,10 @@ edf = st.data_editor(df,
                                },                                
                                    num_rows="dynamic",  
               )
-num = gpa_num(df['Grade'])
+num = gpa_num()
 edf["Converted"] = num
 #st.write(edf)
+print(df['Grade'])
 
 
 
