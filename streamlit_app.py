@@ -16,7 +16,7 @@ def gpa_num():
     try:
         gnum = standard[edf['Grade']
         return str(gnum)
-    else:
+    except:
         return 'Nope'
         
 def test_func():
