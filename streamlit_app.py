@@ -14,7 +14,7 @@ def gpa_num():
     honors = {"A": 5, "B": 4, "C": 3, "D": 2, "F": 1}
     ap = {"A": 6, "B": 5, "C": 4, "D": 3, "F": 2}
     try:
-        gnum = standard[edf['Grade']]
+        gnum = standard[df['Grade']]
         return str(gnum)
     except:
         return str("Nope")
