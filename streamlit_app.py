@@ -18,7 +18,7 @@ def gpa_num():
         gnum = df['Grade']
         return str(gnum)
     except:
-        return str("Nope")
+        return str(df['Grade'])
         
 def test_func():
     
@@ -49,7 +49,7 @@ edf = st.data_editor(df,
               )
 num = gpa_num()
 edf["Converted"] = num
-#st.write(edf)
+st.write(edf)
 print(df['Grade'])
 
 
